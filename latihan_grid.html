@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid gray;
+            padding: 25px;
+            text-align: center;
+        }
+        .row::after{
+            content:  "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;
+        text-align: center;
+        }
+    </style>
+<head>
+    <title>Latihan Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header>
+        <h2>JUDUL HALAMAN</h2>
+    </header>
+    <main class="row">
+        <nav class="col-3">
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+            </ul>
+        </nav>
+        <article class="col-9">
+            <h4>Judul Isi</h4>
+            <p>Sederhananya, pemrograman adalah proses membuat program di komputer. 
+            Pembuatan program ini bisa berupa website, software, aplikasi android, dan sebagainya. 
+            Pemrograman dimulai melalui beberapa tahapan, seperti tulis-menulis, menguji, merevisi, mengevaluasi, serta pengujian kembali.</p>
+            <p>Bahasa pemrograman ini adalah satu set aturan sintaks dan semantik yang digunakan untuk mendefinisikan program komputer.
+            contohnya: BASIC, C, C++, COBOL, FORTRAN, ada, Pascal, Java , .NET, Bahasa Assembly .</p>
+        </article>
+    </main>
+    <footer class="col-12">
+        copyright <i>&copy;</i> argadwi22
+    </footer>
+</body>
+</html>
